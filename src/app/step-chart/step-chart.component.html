@@ -1,0 +1,16 @@
+<div>
+  <p class="app-step-chart-title mb-2 w-100 d-flex justify-content-center">
+    Machine Step View
+  </p>
+  <div>
+    <ngx-charts-gauge
+      [view]="[900, 380]"
+      [results]="stepData"
+      [legendTitle]="'Machine Step in CM'"
+      [legend]="true"
+      [min]="0"
+      [max]="5"
+    >
+    </ngx-charts-gauge>
+  </div>
+</div>

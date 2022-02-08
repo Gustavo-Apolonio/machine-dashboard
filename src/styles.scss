@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+html, body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0%;
+  padding: 0%;
+}

@@ -1,0 +1,14 @@
+<div>
+  <p class="app-speed-chart-title mb-2 w-100 d-flex justify-content-center">
+    Machine Speed View
+  </p>
+  <div>
+    <ngx-charts-gauge
+      [view]="[900, 380]"
+      [results]="speedData"
+      [legendTitle]="'Machine Speed in RPM'"
+      [legend]="true"
+    >
+    </ngx-charts-gauge>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <p class="app-speed-chart-title mb-2 w-100 d-flex justify-content-center">
+    Machine Temperature View
+  </p>
+  <div>
+    <ngx-charts-pie-grid
+      [view]="[900, 380]"
+      [results]="tempData"
+      [label]="'Machine Temperature in Celcius'"
+    >
+    </ngx-charts-pie-grid>
+  </div>
+</div>
