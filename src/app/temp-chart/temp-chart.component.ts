@@ -11,28 +11,12 @@ export class TempChartComponent implements OnInit {
   @Input() width = 900;
   @Input() height = 350;
 
-  ngOnInit(): void {}
-
-  tempData = [
+  @Input() data = [
     {
-      name: 'Machine 1',
-      value: 5,
-    },
-    {
-      name: 'Machine 2',
-      value: 15,
-    },
-    {
-      name: 'Machine 3',
-      value: 27,
-    },
-    {
-      name: 'Machine 4',
-      value: 69,
-    },
-    {
-      name: 'Machine 5',
-      value: 80,
+      name: 'Machine 0',
+      value: 0,
     },
   ];
+
+  ngOnInit(): void {}
 }

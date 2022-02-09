@@ -11,28 +11,12 @@ export class StepChartComponent implements OnInit {
   @Input() width = 900;
   @Input() height = 350;
 
-  ngOnInit(): void {}
-
-  stepData = [
+  @Input() data = [
     {
-      name: 'Machine 1',
-      value: 0.01,
-    },
-    {
-      name: 'Machine 2',
-      value: 5,
-    },
-    {
-      name: 'Machine 3',
-      value: 3,
-    },
-    {
-      name: 'Machine 4',
-      value: 2.75,
-    },
-    {
-      name: 'Machine 5',
-      value: 4,
+      name: 'Machine 0',
+      value: 0.0,
     },
   ];
+
+  ngOnInit(): void {}
 }

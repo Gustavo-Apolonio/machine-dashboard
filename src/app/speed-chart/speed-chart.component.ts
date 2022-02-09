@@ -11,28 +11,12 @@ export class SpeedChartComponent implements OnInit {
   @Input() width = 900;
   @Input() height = 350;
 
-  ngOnInit(): void {}
-
-  speedData = [
+  @Input() data = [
     {
-      name: 'Machine 1',
-      value: 1500,
-    },
-    {
-      name: 'Machine 2',
-      value: 3000,
-    },
-    {
-      name: 'Machine 3',
-      value: 1750,
-    },
-    {
-      name: 'Machine 4',
-      value: 3000,
-    },
-    {
-      name: 'Machine 5',
-      value: 4500,
+      name: 'Machine 0',
+      value: 0,
     },
   ];
+
+  ngOnInit(): void {}
 }

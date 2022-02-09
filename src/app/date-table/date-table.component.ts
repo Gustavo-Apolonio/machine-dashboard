@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-date-table',
@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateTableComponent implements OnInit {
   constructor() {}
+
+  @Input() data = [
+    {
+      id: 0,
+      name: 'Machine 0',
+      date: '00/00/0000',
+      time: '00:00:00',
+    },
+  ];
 
   ngOnInit(): void {}
 }

@@ -4,12 +4,14 @@
       <app-speed-chart
         [width]="fiftyWidth"
         [height]="fiftyHeight"
+        [data]="speedData"
       ></app-speed-chart>
     </div>
     <div class="col-6 app-content-col">
       <app-temp-chart
         [width]="fiftyWidth"
         [height]="fiftyHeight"
+        [data]="temperatureData"
       ></app-temp-chart>
     </div>
   </div>
@@ -18,10 +20,11 @@
       <app-step-chart
         [width]="fiftyWidth"
         [height]="fiftyHeight"
+        [data]="stepData"
       ></app-step-chart>
     </div>
     <div class="col-6 app-content-col">
-      <app-date-table></app-date-table>
+      <app-date-table [data]="tableData"></app-date-table>
     </div>
   </div>
 </div>
