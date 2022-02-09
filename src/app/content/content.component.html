@@ -1,17 +1,26 @@
 <div class="container-fluid app-content-container">
-  <div class="row">
-    <div class="col-6">
-      <app-speed-chart></app-speed-chart>
+  <div class="row app-content-row">
+    <div class="col-6 app-content-col">
+      <app-speed-chart
+        [width]="fiftyWidth"
+        [height]="fiftyHeight"
+      ></app-speed-chart>
     </div>
-    <div class="col-6">
-      <app-temp-chart></app-temp-chart>
+    <div class="col-6 app-content-col">
+      <app-temp-chart
+        [width]="fiftyWidth"
+        [height]="fiftyHeight"
+      ></app-temp-chart>
     </div>
   </div>
-  <div class="row">
-    <div class="col-6">
-      <app-step-chart></app-step-chart>
+  <div class="row app-content-row">
+    <div class="col-6 app-content-col">
+      <app-step-chart
+        [width]="fiftyWidth"
+        [height]="fiftyHeight"
+      ></app-step-chart>
     </div>
-    <div class="col-6">
+    <div class="col-6 app-content-col">
       <app-date-table></app-date-table>
     </div>
   </div>
